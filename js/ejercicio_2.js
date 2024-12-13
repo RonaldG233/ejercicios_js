@@ -1,23 +1,14 @@
 
-
-let contra="Ola123";
-let regex=/([a-z])(\d)[a-z\d]/i;
-
-
-let confirm=prompt("confirme la contraseña: ");
-function contrasena(regex,contra) {
-    if (contra===confirm) {
-        if (contra.includes(regex)) {
-            console.log ("contraseña confirmada"); 
-        }else{
-            console.log ("confirmacion incorrecta");
-        }   
-        
+const contraseñaGuardada = "contrasena124";
+let contrasena = prompt("Ingrese la contraseña: ");
+let patron = /^[a-zA-Z0-9]+$/;
+if (patron.test(contrasena)) {
+    
+    if (contrasena.toLowerCase() === contraseñaGuardada.toLowerCase()) {
+        alert("La contraseña es correcta");
+    } else {
+        alert("Contraseña incorrecta");
     }
+} else {
+    alert("La contraseña solo debe contener caracteres alfanumericos");
 }
-
-
-// console.log(contrasena(regex,contra));
-console.log(regex.test(contra));
-
-

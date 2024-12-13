@@ -1,5 +1,5 @@
-let num1=prompt("Ingresar primer numero");
-let num2=prompt("Ingresar segundo numero");
+let num1=parseInt(prompt("Ingresar primer numero"));
+let num2=parseInt(prompt("Ingresar segundo numero"));
 let operaciones=function (num1, num2) {
     let sum=num1+num2;
     let resta=num1-num2;

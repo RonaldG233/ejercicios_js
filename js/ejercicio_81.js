@@ -12,4 +12,4 @@ function encontrarMayor(array) {
 
 const numeros = [2,6,7,1,9,2,3];
 const mayor = encontrarMayor(numeros);
-console.log(`El número mayor es: ${mayor}`);
+console.log(`El numero mayor es: ${mayor}`);
